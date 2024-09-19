@@ -1,2 +1,4 @@
 env/
 rough_work.py
+.vscode/
+__pycache__

@@ -9,6 +9,8 @@ def reverse_array_within_range(start, end, arr):
             arr[end] = temp
             start+=1
             end-=1
-    print(arr)
-arr = [1,2,3,4,5,6,7,8,9,10]
-reverse_array_within_range(5,0,arr)
+    return arr
+
+if __name__=="__main__":
+    arr = [1,2,3,4,5,6,7,8,9,10]
+    reverse_array_within_range(5,0,arr)
