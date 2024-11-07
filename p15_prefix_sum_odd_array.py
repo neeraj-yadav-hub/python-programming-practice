@@ -1,3 +1,8 @@
+"""
+Given N array elements. Create a prefix sum odd array. A prefix sum odd array is an array of
+sum of odd indexes of an array.
+"""
+
 def create_odd_prefix_sum(given_array):
     prefix_sum = [None]*len(given_array)
     for i in range(0,len(given_array)):
