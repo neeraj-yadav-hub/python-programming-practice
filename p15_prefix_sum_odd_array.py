@@ -5,8 +5,9 @@ sum of odd indexes of an array.
 
 def create_odd_prefix_sum(given_array):
     prefix_sum = [None]*len(given_array)
-    for i in range(0,len(given_array)):
-        if i in [0,1]:
+    prefix_sum[0] = 0
+    for i in range(1,len(given_array)):
+        if i == 1 :
             prefix_sum[i] = given_array[i]
         elif i%2 != 0:
             prefix_sum[i] = prefix_sum[i - 1] + given_array[i]
